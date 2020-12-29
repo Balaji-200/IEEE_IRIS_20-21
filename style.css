@@ -104,6 +104,10 @@ header nav {
   width: 60vw;
 }
 
+.textlight{
+  color: rgba(255, 255, 255, 0.6);
+}
+
 /* Card */
 .flip-card {
   background-color: transparent;
@@ -258,5 +262,10 @@ footer {
 @media screen and (max-width: 600px) and (orientation: landscape){
   .display-4{
     font-size: 1.8rem;
+  }
+  .heading{
+    padding: 0;
+    margin-top: 6em;
+    padding-left: 3em;
   }
 }
