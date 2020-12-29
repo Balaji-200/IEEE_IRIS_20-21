@@ -91,9 +91,9 @@ header nav {
   animation-delay: 4.9s;
 }
 .heading {
-  margin-top: 5em;
+  margin-top: 6em;
+  padding-left: 5em;
   position: absolute;
-  padding: 5em;
   width: 100vw;
   height: auto;
   z-index: 1;
@@ -103,23 +103,17 @@ header nav {
 .about-content {
   width: 60vw;
 }
-/* .bg-dark{
-    background-color: transparent !important;
-}
-.navbar-dark{
-    background-color: transparent !important;
-} */
 
 /* Card */
 .flip-card {
   background-color: transparent;
-  width: 20vw;
-  height: 60vh;
+  width: 300px;
+  height: 450px;
   perspective: 1000px;
 }
 .flip-card-img {
-  width: 20vw;
-  height: 60vh;
+  width: 300px;
+  height: 450px;
   border-radius: 2em;
 }
 .flip-card-inner {
@@ -203,36 +197,12 @@ footer {
     border: none;
     background-color: transparent;
     outline: none;
-}
+} 
 
-@media screen and (max-width: 1200px) {
-  .flip-card-back h1 {
-    font-size: 1rem;
-  }
-  .flip-card-back p {
-    font-size: 0.8rem !important;
-  }
-  .flip-card {
-    height: 70vh;
-  }
-  .flip-card-img {
-    height: 70vh;
-  }
-}
-@media screen and (max-width: 992px) {
-  .flip-card,
-  .flip-card-img {
-    width: 35vw;
-    height: 90vh;
-  }
-  .flip-card-back h1 {
-    font-size: 2rem;
-  }
-  .flip-card-back p {
-    font-size: 1rem !important;
-  }
-}
 @media screen and (max-width: 600px) {
+  .display-4{
+    font-size: 3.2rem;
+  }
   .header-logo {
     margin-left: 0;
   }
@@ -247,14 +217,6 @@ footer {
   }
   .about-content {
     width: 100vw;
-  }
-  .flip-card {
-    width: 75vw;
-    height: 60vh;
-  }
-  .flip-card-img {
-    width: 75vw;
-    height: 60vh;
   }
   .fab {
     font-size: 1rem;
@@ -271,6 +233,9 @@ footer {
   .header-logo {
     height: 2em;
   }
+  .display-4{
+    font-size: 2.5rem;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -284,5 +249,14 @@ footer {
   .flip-card-img {
     width: 80vw;
     height: 70vh;
+  }
+  .display-4{
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) and (orientation: landscape){
+  .display-4{
+    font-size: 1.8rem;
   }
 }

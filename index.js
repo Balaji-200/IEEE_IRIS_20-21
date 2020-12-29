@@ -16,10 +16,10 @@ var toClose = false;
 var smallScreen = false;
 
 const scrollToTop = () => {
-    fab.children[0].addEventListener('click', ()=>{
-        window.scrollTo(0,0);
-    })
-}
+  fab.children[0].addEventListener("click", () => {
+    window.scrollTo(0, 0);
+  });
+};
 
 closeIcon.classList.add("d-none");
 togglerIcon.classList.add("d-block");
@@ -44,9 +44,7 @@ window.addEventListener("scroll", () => {
     document.documentElement.scrollTop ||
     document.body.scrollTop ||
     0;
-  console.log(pos);
   smallScreen = window.screen.width <= 992;
-  console.log(smallScreen);
   if (pos > 100) {
     abouth1.classList.remove("animate__fadeOutUp");
     aboutp.classList.remove("animate__fadeOutUp");
@@ -67,7 +65,11 @@ window.addEventListener("scroll", () => {
   } else {
     speakerH1.classList.add("animate__fadeOutUp");
   }
-  if (!smallScreen && pos > 600) {
+  if (
+    (!smallScreen && pos > 600) ||
+    (window.screen.width > 800 && smallScreen && pos > 500)
+  ) {
+    console.log(pos);
     card1.classList.remove("animate__fadeOut");
     card2.classList.remove("animate__fadeOut");
     card3.classList.remove("animate__fadeOut");
@@ -87,21 +89,28 @@ window.addEventListener("scroll", () => {
     card3.classList.add("animate__fadeOut");
     card4.classList.add("animate__fadeOut");
   }
-  if (!smallScreen && pos > 1000) {
+  if (
+    (!smallScreen && pos > 1000) ||
+    (window.screen.width > 800 && smallScreen && pos > 1350)
+  ) {
+    console.log("Iphone");
     sponsorsH1.classList.remove("animate__fadeOut");
     sponsorsH1.classList.add("animate__fadeInUp");
   } else {
     sponsorsH1.classList.remove("animate__fadeInUp");
     sponsorsH1.classList.add("animate__fadeOut");
   }
-  if (!smallScreen && pos > 1100) {
+  if (
+    (!smallScreen && pos > 1100) ||
+    (window.screen.width > 800 && smallScreen && pos > 1400)
+  ) {
     sponsors.classList.remove("animate__fadeOut");
     sponsors.classList.add("animate__fadeInUp");
   } else {
     sponsors.classList.remove("animate__fadeInUp");
     sponsors.classList.add("animate__fadeOut");
   }
-  if (pos > 650) {
+  if (pos > 650 || (window.screen.width > 800 && smallScreen)) {
     fab.classList.remove("animate__fadeOut");
     fab.classList.add("animate__fadeIn");
     fab.classList.remove("d-none");
@@ -113,7 +122,7 @@ window.addEventListener("scroll", () => {
     fab.classList.remove("d-block");
     fab.classList.add("d-none");
   }
-  if (smallScreen) {
+  if (smallScreen && window.screen.width < 800) {
     if (pos > 600) {
       card1.classList.remove("animate__fadeOut");
       card1.classList.add("animate__fadeInUp");
