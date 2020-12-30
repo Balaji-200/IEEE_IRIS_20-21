@@ -28,6 +28,7 @@
       integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -37,7 +38,7 @@
         style="position: absolute; z-index: 111; width: 100vw"
       >
         <div class="container-fluid">
-          <a class="navbar-brand">
+          <a class="navbar-brand" href="https://ieee.vit.edu.in">
             <img
               class="header-logo"
               src="https://ieee.vit.edu.in/assets/images/ieeevit-blue-1-5017x1103.png"
@@ -147,17 +148,13 @@
       style="overflow-y: hidden"
     >
       <div class="about-content d-flex flex-column align-items-center">
-        <h1
-          id="about-h1"
-          class="animate__animated"
-          style="animation-duration: 1s"
-        >
+        <h1 id="about-h1" class="animate__animated" data-aos="fade-up">
           About IRIS
         </h1>
         <p
           class="lead p-4 pt-2 text-center animate__animated"
           id="about-p"
-          style="animation-duration: 1s"
+          data-aos="fade-up"
         >
           IRIS is a series of talks given by people from various walks of life.
           An acronym for Inspire,Resonate,Integrate, and Succeed. IRIS aims at
@@ -167,12 +164,12 @@
         </p>
       </div>
     </section>
-    <h1 id="speakers-h1" class="h1 m-3 animate__animated">Our Speakers:</h1>
+    <h1 id="speakers-h1" class="h1 m-3" data-aos="fade-up">Our Speakers:</h1>
     <!-- CARDS -->
     <section
       class="d-flex flex-md-row justify-content-md-around flex-column flex-wrap align-items-center"
     >
-      <div class="flip-card mt-3 animate__animated" id="card-1">
+      <div class="flip-card mt-3" data-aos="fade-up" id="card-1">
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img
@@ -197,7 +194,7 @@
           </div>
         </div>
       </div>
-      <div class="flip-card mt-3 animate__animated" id="card-2">
+      <div class="flip-card mt-3 " data-aos="fade-up" id="card-2">
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img
@@ -222,7 +219,7 @@
           </div>
         </div>
       </div>
-      <div class="flip-card mt-3 animate__animated" id="card-3">
+      <div class="flip-card mt-3 " data-aos="fade-up" id="card-3">
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img
@@ -247,7 +244,7 @@
           </div>
         </div>
       </div>
-      <div class="flip-card mt-3 animate__animated" id="card-4">
+      <div class="flip-card mt-3 " data-aos="fade-up" id="card-4">
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img
@@ -273,9 +270,9 @@
         </div>
       </div>
     </section>
-    <h1 id="sponsors-h1" class="h1 m-5 animate__animated">Our Sponsors:</h1>
+    <h1 id="sponsors-h1" class="h1 m-5" data-aos="fade-up">Our Sponsors:</h1>
     <section
-      class="d-flex flex-row justify-content-around m-3 animate__animated"
+      class="d-flex flex-row justify-content-around m-3 " data-aos="fade-up"
       id="sponsors"
     >
       <a href="https://tesla.com" target="__blank"
@@ -322,6 +319,7 @@
       integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="index.js"></script>
   </body>
 </html>

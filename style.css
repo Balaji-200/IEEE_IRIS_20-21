@@ -19,6 +19,8 @@ body {
 }
 .background-image::after {
   content: "";
+  height: 100vh;
+  width: 100vw;
   top: 0;
   left: 0;
   bottom: 0;
@@ -105,7 +107,7 @@ header nav {
 }
 
 .textlight{
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 /* Card */
@@ -259,13 +261,12 @@ footer {
   }
 }
 
-@media screen and (max-width: 600px) and (orientation: landscape){
+@media screen and (min-device-width: 500px) and (max-device-width: 600px) and (orientation: landscape){
   .display-4{
     font-size: 1.8rem;
   }
   .heading{
     padding: 0;
-    margin-top: 6em;
     padding-left: 3em;
   }
 }
