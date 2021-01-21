@@ -106,7 +106,7 @@ header nav {
   width: 60vw;
 }
 
-.textlight{
+.textlight {
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -181,32 +181,68 @@ footer {
 .fa-linkedin-in:hover {
   color: #2277b5;
 }
-.fab.fa-instagram:hover{
-    color: transparent;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    background: -moz-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-  }
-#sponsors img{
-    width: 25vw;
+.fab.fa-instagram:hover {
+  color: transparent;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background: -webkit-radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background: -moz-radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
 }
-.floatingActionButton{
-    right: 5em;
-    bottom: 5em;
-    position: fixed;
-    z-index: 101001010;
+#sponsors img {
+  width: 25vw;
 }
-.floatingActionButton button{
-    border: none;
-    background-color: transparent;
-    outline: none;
-} 
+.floatingActionButton {
+  right: 5em;
+  bottom: 5em;
+  position: fixed;
+  z-index: 101001010;
+}
+.floatingActionButton button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.floatingActionButton-scrollDown {
+  position: absolute;
+  bottom: 2vw;
+  left: calc(50vw - 2rem);
+  font-size: 4rem;
+  background-color: transparent;
+  border: none;
+  color: white;
+  z-index: 1222;
+}
+
+.floatingActionButton-scrollDown:focus{
+  outline: none;
+}
 
 @media screen and (max-width: 600px) {
-  .display-4{
+  .display-4 {
     font-size: 3.2rem;
   }
   .header-logo {
@@ -227,19 +263,19 @@ footer {
   .fab {
     font-size: 1rem;
   }
-  footer p{
-      font-size: 0.8rem;
+  footer p {
+    font-size: 0.8rem;
   }
-  .floatingActionButton{
-      right: 3em;
-      bottom: 3em;
+  .floatingActionButton {
+    right: 3em;
+    bottom: 3em;
   }
 }
 @media screen and (max-width: 360px) {
   .header-logo {
     height: 2em;
   }
-  .display-4{
+  .display-4 {
     font-size: 2.5rem;
   }
 }
@@ -256,16 +292,16 @@ footer {
     width: 80vw;
     height: 70vh;
   }
-  .display-4{
+  .display-4 {
     font-size: 2.5rem;
   }
 }
 
-@media screen and (min-device-width: 500px) and (max-device-width: 600px) and (orientation: landscape){
-  .display-4{
+@media screen and (min-device-width: 500px) and (max-device-width: 600px) and (orientation: landscape) {
+  .display-4 {
     font-size: 1.8rem;
   }
-  .heading{
+  .heading {
     padding: 0;
     padding-left: 3em;
   }

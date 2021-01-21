@@ -2,6 +2,7 @@ const toggler = document.getElementById("toggler");
 const togglerIcon = document.getElementById("toggler-icon");
 const closeIcon = document.getElementById("close-icon");
 const fab = document.getElementById("floatingActionButton");
+const fabSD = document.getElementById("fabScrollDown");
 var toClose = false;
 
 AOS.init({
@@ -17,6 +18,8 @@ const scrollToTop = () => {
     window.scrollTo(0, 0);
   });
 };
+
+const scrollDown = () => window.scrollTo(0, 350);
 
 closeIcon.classList.add("d-none");
 togglerIcon.classList.add("d-block");
@@ -52,5 +55,13 @@ window.addEventListener("scroll", () => {
       fab.classList.add("animate__fadeOut");
       fab.classList.remove("d-block");
       fab.classList.add("d-none");
+    }
+
+    if (pos < 300){
+      fabSD.classList.remove("d-none");
+      fabSD.classList.add("d-block");
+    }else{
+      fabSD.classList.remove("d-block");
+      fabSD.classList.add("d-none");
     }
 });
